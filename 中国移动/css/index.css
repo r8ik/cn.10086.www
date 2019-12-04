@@ -123,6 +123,7 @@ html {
 }
 .carousel-left {
   float: left;
+  position: relative;
   height: 398px;
   width: 235px;
   /* background-color: saddlebrown; */
@@ -137,25 +138,46 @@ html {
 .carousel-left > ul img {
   float: left;
 }
-.carousel-left > ul li {
-  position: relative;
+.carousel-left-li,
+.carousel-left-li-two {
+  /* position: relative; */
   height: 54px;
   width: 100%;
   /* background-color: slategray; */
   line-height: 54px;
   font-size: 15px;
   color: #333333;
-  border: 1px solid red;
+  border: 1px solid transparent;
   box-sizing: border-box;
 }
-.carousel-left > ul li > div {
+.carousel-left-li > a {
+  position: relative;
+  display: inline-block;
+  height: 52px;
+  width: 100%;
+  background-color: #fff;
+  z-index: 18;
+}
+.carousel-left-li-all,
+.carousel-left-li-two-all {
   position: absolute;
   margin-left: 233px;
   margin-top: -55px;
   height: 418px;
   width: 712px;
-  border: 1px solid red;
+  border-right: 1px solid #3eb4fa;
+  border-bottom: 1px solid #3eb4fa;
+  border-left: 1px solid #3eb4fa;
   background-color: #ffffff;
+}
+.carousel-left-li-two-all {
+  margin-top: -109px;
+}
+.carousel-left-li-two-all > div {
+  display: inline-block;
+}
+.carousel-left-li-two-all > div p {
+  display: inline-block;
 }
 .carousel-left > ul i {
   float: right;
@@ -167,21 +189,100 @@ html {
   margin-top: 17px;
   margin-right: 10px;
 }
-.carousel-left-li-all div {
+.carousel-left-li-all {
+  display: none;
+}
+.carousel-left-li:hover > a,
+.carousel-left-li:hover i {
+  color: #3eb4fa;
+}
+.carousel-left-li:hover {
+  position: relative;
+  border: 1px solid #3eb4fa;
+
+  /* border-right: #fff; */
+  background-color: #fff;
+  z-index: 5;
+  box-sizing: border-box;
+}
+.carousel-left-li:hover .carousel-left-li-all {
+  position: relative;
+  z-index: 6;
+  display: inline-block;
+}
+.carousel-left-li-all > div,
+.carousel-left-li-two-all > div {
   height: 42px;
   margin-left: 28px;
 }
-.carousel-left-li-all a {
+.carousel-left-li-two-all > div {
+  float: left;
+  height: 42px;
+  margin-left: 28px;
+  background-color: violet;
+  /* line-height: 1em; */
+}
+.carousel-left-li-two-all > p a,
+.carousel-left-li-two-all > p s,
+/* .carousel-left-li-two-all > p h2, */
+.carousel-left-li-two-all > p span {
+  float: left;
+}
+.carousel-left-li-two-all p{
+  float: left;
+  height: 52px;
+  width: 100%;
+  background-color: yellow;
+}
+.carousel-left-li-two-all p>h2{
+  height: 52px;
+  background-color: tomato;
+}
+/* .carousel-left-li-two-all div:nth-child(2){
+height: 71px;
+background-color: teal;
+} */
+/* .carousel-left-li-two-all div:nth-child(2) a,
+.carousel-left-li-two-all div:nth-child(2) span{
+float: left;
+  height: 20px;
+} */
+.carousel-left-li-all a,
+.carousel-left-li-two-all a {
   font-size: 10px;
 }
-.carousel-left-li-all > div a:first-child {
+.carousel-left-li-all a:hover {
+  color: #eb4099;
+}
+.carousel-left-li-all > div a:first-child,
+.carousel-left-li-two-all > div a:first-child {
   display: inline-block;
   width: 65px;
   color: #666666;
   font-weight: 600;
 }
-.carousel-left-li-all s{
-  color:#424242 ;
+.carousel-left-li-all > div a:first-child:hover {
+  color: #0085d0;
+}
+.carousel-left-li-all > div a:last-child {
+  color: #74c9fb;
+}
+.carousel-left-li-all > div:nth-child(5) a:last-child {
+  color: #333333;
+}
+.carousel-left-li-all > div:nth-child(5) a:last-child:hover {
+  color: #eb4099;
+}
+.carousel-left-li-all s,
+.carousel-left-li-two-all s {
+  color: #424242;
+  margin-right: 17px;
+}
+.carousel-left-li-all span,
+.carousel-left-li-two-all span {
+  font-size: 20px;
+  color: #d7d7d7;
+  margin: 0 3px;
 }
 .carousel-center {
   float: left;
@@ -243,13 +344,14 @@ html {
   height: 33px;
   width: 232px;
   border: 1px solid #dadada;
-  line-height: 33px;
+  /* line-height: 33px; */
 }
 .carousel-right-bottom-content > div input {
   margin-left: 8px;
   color: #f2e5dc;
   border: none;
   background-color: transparent;
+  margin-top: 11px;
 }
 .carousel-right-bottom-content a span {
   display: inline-block;
@@ -258,7 +360,8 @@ html {
   border: 1px solid #dadada;
   color: #666666;
   margin-right: 8px;
-  line-height: 32px;
+  /* line-height: 32px; */
+  padding-top: 11px;
   text-align: center;
   /* padding-left: 3px; */
   box-sizing: border-box;
@@ -280,8 +383,9 @@ html {
   color: #ffffff;
   margin-left: 101px;
   margin-top: 22px;
-  line-height: 34px;
+  /* line-height: 34px; */
   padding-left: 37px;
+  padding-top: 10px;
   box-sizing: border-box;
 }
 /* 4. 优惠专区 down */
@@ -1133,4 +1237,54 @@ html {
   width: 100%;
   background-color: thistle;
   text-align: center;
+}
+
+/* 头部导航定位 */
+.headnav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 61px;
+  /* background-color: violet; */
+  display: none;
+  width: 100%;
+  border-bottom: 1px solid #83cdfb;
+  background-color: #fff;
+  z-index: 111;
+}
+.headnav-top-left {
+  float: left;
+}
+.headnav-top-left img {
+  margin-top: 9px;
+}
+
+.headnav-top-right {
+  float: right;
+}
+.headnav-top-right-search {
+  height: 32px;
+  width: 282px;
+  border: 1px solid #25b2fe;
+  box-sizing: border-box;
+  margin-top: 13px;
+}
+.headnav-top-right input {
+  float: left;
+  margin-left: 8px;
+  margin-top: 10px;
+  background-color: transparent;
+  border: none;
+}
+.headnav-top-right-search button {
+  float: right;
+}
+.headnav-top-right-search > div button {
+  height: 30px;
+  width: 77px;
+  background-color: #25b2fe;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
 }
