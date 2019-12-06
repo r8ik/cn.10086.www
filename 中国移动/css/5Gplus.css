@@ -1,0 +1,29 @@
+.five-top{
+  height: 1360px;
+  width: 750px;
+  /* background-color: red; */
+ margin: 0 auto;
+}
+.footer {
+  height: 198px;
+  width: 100%;
+  /* background-color: thistle; */
+  text-align: center;
+}
+.footer a:hover{
+color: #007bc7;
+text-decoration: underline;
+text-decoration-color: #007bc7;
+}
+.footer div>div{
+  margin-bottom: 18px;
+}
+.footer-id span:first-child{
+  margin-right: 22px;
+}
+.footer-id span:nth-child(2){
+  display: inline-block;
+  height: 28px;
+  margin-top: 12px;
+  line-height: 24px;
+}

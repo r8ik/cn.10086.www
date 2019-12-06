@@ -24,7 +24,7 @@ html {
   margin-left: 18px;
   color: #808080;
 }
-.topnav-right > a:hover {
+.topnav-right>a:hover {
   color: #3eb4fa;
 }
 .topnav-right a span {
@@ -43,7 +43,7 @@ html {
 }
 
 /* 二维码 */
-.qr {
+.qr{
   display: none;
   position: absolute;
   top: 30px;
@@ -54,31 +54,31 @@ html {
   background-color: #fff;
   border: 1px solid #dfddde;
 }
-.qr > img {
+.qr>img{
   height: 92px;
   width: 92px;
   margin: 24px 34px;
 }
-.qr > p {
+.qr>p{
   margin-top: -22px;
   margin-left: 24px;
   font-size: 12px;
   color: #3b3b3b;
 }
-.topnav-phone {
+.topnav-phone{
   height: 30px;
   width: 103px;
   border-left: 1px solid transparent;
   border-right: 1px solid transparent;
 }
-.topnav-phone:hover {
+.topnav-phone:hover{
   border-left: 1px solid #dfddde;
   border-right: 1px solid #dfddde;
 }
-.topnav-phone:hover .qr {
+.topnav-phone:hover .qr{
   display: block;
 }
-.kongb {
+.kongb{
   position: absolute;
   top: -2px;
   height: 3px;
@@ -105,7 +105,7 @@ html {
   margin-right: 14px;
 }
 /* 2.1.1.2搜索栏南京 */
-.search-top-slide {
+.search-top-slide{
   float: left;
   margin-top: 42px;
   font-size: 15px;
@@ -134,8 +134,8 @@ html {
   background-color: transparent;
   border: none;
 }
-.search-top-right span:hover {
-  color: #3eb4fa;
+.search-top-right span:hover{
+color: #3eb4fa;
 }
 .search-top-right-search button {
   float: right;
@@ -163,8 +163,8 @@ html {
   width: 100%;
   border-bottom: 1px solid #3eb4fa;
 }
-.search-top-bottom span:hover {
-  color: #3eb4fa;
+.search-top-bottom span:hover{
+color: #3eb4fa;
 }
 .search-top-bottom > div {
   float: left;
@@ -229,6 +229,7 @@ html {
   width: 115px;
 }
 
+
 .carousel-left-li-a > i {
   /* float: right; */
   /* margin-right: 33px; */
@@ -255,6 +256,7 @@ html {
   box-sizing: border-box;
   background-color: #fff;
   box-sizing: border-box;
+  z-index: 4;
 }
 .carousel-left-li-one:hover .carousel-left-li-one-business {
   display: block;
@@ -503,17 +505,17 @@ html {
   display: block;
 }
 .home {
-  display: none;
-  position: absolute;
-  top: -163px;
-  left: 233px;
-  height: 418px;
-  width: 712px;
-  background-color: #fff;
-  border-right: 1px solid #3eb4fa;
-  border-bottom: 1px solid #3eb4fa;
-  border-left: 1px solid #3eb4fa;
-  box-sizing: border-box;
+    display: none;
+    position: absolute;
+    top: -163px;
+    left: 233px;
+    height: 418px;
+    width: 712px;
+    background-color: #fff;
+    border-right: 1px solid #3eb4fa;
+    border-bottom: 1px solid #3eb4fa;
+    border-left: 1px solid #3eb4fa;
+    box-sizing: border-box;
 }
 .home-option {
   height: 41px;
@@ -582,7 +584,7 @@ html {
   display: block;
 }
 .cap {
-  display: none;
+  display: none; 
   position: absolute;
   top: -217px;
   left: 233px;
@@ -594,7 +596,7 @@ html {
   border-left: 1px solid #3eb4fa;
   box-sizing: border-box;
 }
-.cap .cap-hot {
+.cap .cap-hot{
   height: 41px;
 }
 .cap-option {
@@ -655,7 +657,7 @@ html {
   background-color: #fff;
   z-index: 6;
 }
-.cap-ad {
+.cap-ad{
   position: absolute;
   top: 10px;
   right: 32px;
@@ -668,7 +670,7 @@ html {
   display: block;
 }
 .finger {
-  display: none;
+  display: none; 
   position: absolute;
   top: -271px;
   left: 233px;
@@ -680,7 +682,7 @@ html {
   border-left: 1px solid #3eb4fa;
   box-sizing: border-box;
 }
-.finger .finger-hot {
+.finger .finger-hot{
   height: 71px;
 }
 .finger-option {
@@ -742,6 +744,7 @@ html {
   z-index: 6;
 }
 
+
 /*特色专区 special */
 .carousel-left-li-seven {
   position: relative;
@@ -750,7 +753,7 @@ html {
   display: block;
 }
 .special {
-  display: none;
+  display: none; 
   position: absolute;
   top: -325px;
   left: 233px;
@@ -821,18 +824,57 @@ html {
   background-color: #fff;
   z-index: 6;
 }
-.special-ad {
+.special-ad{
   position: absolute;
   top: 10px;
   right: 32px;
 }
 /* 中心 */
 .carousel-center {
+  position: relative;
   float: left;
   height: 400px;
   width: 705px;
   /* background-color: salmon; */
 }
+
+/* 轮播图按钮 */
+.carousel-center-zuo{
+  display: none;
+  position: absolute;
+  top: 160px;
+  left: 0px;
+}
+.carousel-center-you{
+  display: none;
+  position: absolute;
+  top: 160px;
+  right: 0;
+}
+
+.carousel-center:hover .carousel-center-zuo,
+.carousel-center:hover .carousel-center-you{
+  display: block;
+}
+/* 轮播图小圆点 */
+.carousel-center-dot{
+  position: absolute;
+  bottom: 12px;
+  left: 286px;
+  /* background-color: rebeccapurple; */
+}
+.carousel-center-dot li{
+  float: left;
+  height: 10px;
+  width: 10px;
+  background-color: #090e2d;
+  margin-right: 8px;
+  border-radius: 50%;
+}
+.carousel-center-dot a:nth-child(4) li{
+  background-color: #e40078;
+}
+
 .carousel-right {
   float: right;
   height: 398px;
@@ -932,6 +974,8 @@ html {
   box-sizing: border-box;
 }
 
+
+
 /* 4. 优惠专区 down */
 .down {
   height: 190px;
@@ -968,6 +1012,8 @@ html {
   margin-left: 114px;
   margin-top: 8px;
 }
+/* 优惠专区按钮 */
+
 /* 1-5F  title*/
 .discount,
 .business,
@@ -1738,17 +1784,17 @@ html {
   height: 38px;
   border: 1px solid #e8e8e8;
 }
-.annouce-left {
+.annouce-left{
   float: left;
   width: 540px;
   height: 38px;
   /* background-color: wheat; */
 }
-.annouce-left > a {
+.annouce-left>a{
   color: #3eb4fa;
   font-size: 13px;
 }
-.annouce-left-an {
+.annouce-left-an{
   display: inline-block;
   width: 70px;
   height: 26px;
@@ -1757,38 +1803,39 @@ html {
   background-image: url(../img/annouce-left.gif);
   background-repeat: no-repeat;
 }
-.annouce-left-an > span {
+.annouce-left-an>span{
   display: inline-block;
   margin-left: 32px;
   margin-top: 2px;
 }
-.annouce-left > em {
+.annouce-left>em{
   float: right;
   margin-top: 14px;
   color: #ddcccf;
   font-weight: normal;
 }
-.annouce-right {
+.annouce-right{
   float: left;
   width: 540px;
   height: 38px;
   /* background-color: wheat; */
 }
-.annouce-right > a {
+.annouce-right>a{
   display: inline-block;
   color: #3eb4fa;
   margin-left: 68px;
   margin-top: 13px;
   font-size: 13px;
 }
-.annouce-right > em {
+.annouce-right>em{
   float: right;
   margin-top: 14px;
   color: #ddcccf;
 }
-.announce-change > img {
+.announce-change>img{
   float: right;
   margin-top: 8px;
+
 }
 /* 13.国资动态 state(国家) */
 .state {
@@ -1796,48 +1843,48 @@ html {
   width: 100%;
   /* background-color: teal; */
 }
-.state > .container {
+.state >.container{
   height: 92px;
-  border: 1px solid #dfdfdf;
+  border: 1px solid  #dfdfdf;
 }
-.state-title {
+.state-title{
   height: 24px;
   width: 100%;
   /* background-color: wheat; */
   line-height: 24px;
 }
-.state-title > a {
+.state-title>a{
   float: right;
 }
-.state-title > a:hover {
+.state-title>a:hover{
   color: #3eb4fa;
 }
-.state-logo {
+.state-logo{
   float: left;
   margin-right: 42px;
   margin-left: 24px;
 }
-.state-content {
+.state-content{
   float: left;
   height: 42px;
   width: 948px;
   /* background-color: yellow; */
 }
-.state-content > li {
+.state-content>li{
   float: left;
   /* width: 426px; */
   height: 14px;
   /* background-color: teal; */
 }
-.state-content > em {
+.state-content>em{
   float: left;
   margin-right: 68px;
-  margin-left: 22px;
-  color: #d5cccc;
-  font-weight: normal;
-  /* font-size: 14px; */
+margin-left: 22px;
+color: #d5cccc;
+font-weight: normal;
+/* font-size: 14px; */
 }
-.state-content li {
+.state-content li{
   width: 322px;
   height: 12px;
   /* 超出隐藏 */
@@ -1847,13 +1894,13 @@ html {
   /* 让文字出现省略号 */
   text-overflow: ellipsis;
 }
-.state-content li > a:hover {
-  color: #3eb4fa;
+.state-content li>a:hover{
+  color:#3eb4fa ;
 }
-.state-content-la {
+.state-content-la{
   margin-top: 13px;
 }
-.state-content-em {
+.state-content-em{
   margin-top: 13px;
 }
 /* 14.服务serve  */
@@ -1887,9 +1934,6 @@ html {
   font-weight: 700;
   margin-top: 27px;
 }
-.serve ul li:nth-last-child(-n+6) a:hover {
-  color: #3eb4fa;
-}
 /* 15.底部 footer */
 .footer {
   height: 198px;
@@ -1897,18 +1941,18 @@ html {
   /* background-color: thistle; */
   text-align: center;
 }
-.footer a:hover {
-  color: #007bc7;
-  text-decoration: underline;
-  text-decoration-color: #007bc7;
+.footer a:hover{
+color: #007bc7;
+text-decoration: underline;
+text-decoration-color: #007bc7;
 }
-.footer div > div {
+.footer div>div{
   margin-bottom: 18px;
 }
-.footer-id span:first-child {
+.footer-id span:first-child{
   margin-right: 22px;
 }
-.footer-id span:nth-child(2) {
+.footer-id span:nth-child(2){
   display: inline-block;
   height: 28px;
   margin-top: 12px;
