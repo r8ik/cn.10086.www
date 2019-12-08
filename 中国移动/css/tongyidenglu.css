@@ -1,0 +1,190 @@
+/* html {
+  margin-bottom: 500px;
+} */
+.topnav {
+  height: 30px;
+  width: 100%;
+  background-color: #f5f5f5;
+  line-height: 30px;
+}
+.topnav-left {
+  float: left;
+}
+.topnav-left span {
+  margin-right: 28px;
+  color: #808080;
+}
+.topnav-left a {
+  color: #e40077;
+}
+.topnav-right {
+  float: right;
+}
+.topnav-right a {
+  margin-left: 18px;
+  color: #808080;
+}
+.topnav-right > a:hover {
+  color: #3eb4fa;
+}
+.topnav-right a span {
+  color: #e40077;
+}
+/* 中国移动客户端背景 */
+.topnav-phone {
+  position: relative;
+  display: inline-block;
+  height: 18px;
+  width: 114px;
+  padding-left: 19px;
+  background-image: url(../img/topnav-phone.png);
+  background-position: 0px 4px;
+  background-repeat: no-repeat;
+}
+
+/* 二维码 */
+.qr {
+  display: none;
+  position: absolute;
+  top: 30px;
+  left: -1px;
+  height: 162px;
+  width: 162px;
+  box-sizing: border-box;
+  background-color: #fff;
+  border: 1px solid #dfddde;
+  z-index: 5;
+}
+.qr > img {
+  height: 92px;
+  width: 92px;
+  margin: 24px 34px;
+}
+.qr > p {
+  margin-top: -22px;
+  margin-left: 24px;
+  font-size: 12px;
+  color: #3b3b3b;
+}
+.topnav-phone {
+  height: 30px;
+  width: 103px;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+}
+.topnav-phone:hover {
+  border-left: 1px solid #dfddde;
+  border-right: 1px solid #dfddde;
+}
+.topnav-phone:hover .qr {
+  display: block;
+}
+.kongb {
+  position: absolute;
+  top: -2px;
+  height: 3px;
+  width: 122px;
+  background-color: #fff;
+}
+/*  2.搜索栏 */
+.search {
+  height: 135px;
+  width: 100%;
+  /* background-color: aquamarine; */
+}
+.search-top {
+  height: 88px;
+  width: 100%;
+  /* background-color: cadetblue; */
+}
+.search-top-left {
+  float: left;
+}
+.search-top-left img {
+  float: left;
+  margin-top: 18px;
+  margin-right: 14px;
+}
+/* 2.1.1.2搜索栏南京 */
+.search-top-slide {
+  float: left;
+  margin-top: 42px;
+  font-size: 15px;
+  height: 16px;
+  width: 48px;
+  /* background-color: turquoise; */
+  background-image: url(../img/search-top-slide.png);
+  background-repeat: no-repeat;
+  background-position: 37px 5px;
+}
+/*  2.1.2 搜索栏上面部分 右边 */
+.search-top-right {
+  float: right;
+}
+.search-top-right-search {
+  height: 32px;
+  width: 498px;
+  border: 1px solid #25b2fe;
+  box-sizing: border-box;
+  margin-top: 22px;
+}
+.search-top-right input {
+  float: left;
+  margin-left: 8px;
+  margin-top: 10px;
+  background-color: transparent;
+  border: none;
+}
+.search-top-right span:hover {
+  color: #3eb4fa;
+}
+.search-top-right-search button {
+  float: right;
+}
+.search-top-right-search > div button {
+  height: 30px;
+  width: 77px;
+  background-color: #25b2fe;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+}
+.search-top-right > a {
+  float: left;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+.search-top-right > a:nth-child(2n) {
+  color: #e40077;
+}
+/* 2.2搜索栏下面部分 */
+.search-top-bottom {
+  height: 46px;
+  width: 100%;
+  border-bottom: 1px solid #3eb4fa;
+}
+.search-top-bottom span:hover {
+  color: #3eb4fa;
+}
+.search-top-bottom > div {
+  float: left;
+  height: 46px;
+  width: 234px;
+  background-color: #3eb4fa;
+  line-height: 48px;
+  font-size: 16px;
+  color: #ffffff;
+  padding-left: 66px;
+  box-sizing: border-box;
+}
+.search-top-bottom > a {
+  float: left;
+  margin-left: 58px;
+  font-size: 16px;
+  color: #222222;
+  margin-top: 16px;
+}
+.search-top-bottom > a:nth-child(2) {
+  color: #3eb4fa;
+}

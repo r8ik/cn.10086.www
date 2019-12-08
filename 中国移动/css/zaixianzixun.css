@@ -1,0 +1,24 @@
+.login{
+  height: 484px;
+  width: 970px;
+  background-image: url(../img/在线咨询/weidenglu.jpg);
+  margin: 220px auto;
+}
+.login-dl{
+  display: inline-block;
+  width: 196px;
+  height: 46px;
+  background-color: transparent;
+  margin-top: 300px;
+  margin-left: 506px;
+  border-radius: 33px;
+}
+.login-yk{
+  display: inline-block;
+  width: 196px;
+  height: 46px;
+  background-color: transparent;
+  /* margin-top: 300px; */
+  margin-left: 57px;
+  border-radius: 33px;
+}
