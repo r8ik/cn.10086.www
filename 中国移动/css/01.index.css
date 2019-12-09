@@ -30,6 +30,9 @@
 .topnav-right a span {
   color: #e40077;
 }
+.topnav-eng{
+  margin-right: 8px;
+}
 /* 中国移动客户端背景 */
 .topnav-phone {
   position: relative;
@@ -173,7 +176,7 @@
   width: 234px;
   background-color: #3eb4fa;
   line-height: 48px;
-  font-size: 16px;
+  font-size: 17px;
   color: #ffffff;
   padding-left: 66px;
   box-sizing: border-box;
@@ -285,8 +288,10 @@
   z-index: 6;
 }
 .carousel-left-li-one-business-option {
+  /* position: relative; */
   height: 37px;
 }
+
 .carousel-left-li-one-business-option > a {
   float: left;
   width: 64px;
@@ -882,6 +887,26 @@
   border: 1px solid transparent;
   box-sizing: border-box;
 }
+/* 惠 */
+.carousel-right-top-gj{
+position: relative;
+}
+.hui {
+  position: absolute;
+  top: -13px;
+  left: 40px;
+  width: 21px;
+  height: 21px;
+  padding-top: 3px;
+  padding-left: 1px;
+  box-sizing: border-box;
+  background: rgb(228, 0, 119);
+  border-radius: 50%;
+  color: #fff;
+  font-family: 宋体;
+  font-weight: normal;
+  font-size: 14px;
+}
 .carousel-right-top {
   height: 148px;
   width: 234px;
@@ -1099,6 +1124,15 @@
   margin-right: 10px;
   margin-top: 36px;
 }
+.discount-title-right span:hover,
+.discount-title-right span:hover,
+.business-title-right span:hover,
+.phone-title-right span:hover,
+.capacity-title-right span:hover,
+.amusement-title-right span:hover,
+.like-title-right span:hover{
+ color: #3eb4fa;
+}
 .discount-title-right a:first-child span,
 .discount-title-right a:first-child span,
 .business-title-right a:first-child span,
@@ -1107,6 +1141,7 @@
 .amusement-title-right a:first-child span {
   color: #e30077;
 }
+
 /* 5. 1F  优惠 discount */
 .discount {
   /* background-color: coral; */
@@ -1967,7 +2002,7 @@
   font-weight: 700;
   margin-top: 27px;
 }
-.serve ul li:nth-last-child(-n+6) a:hover {
+.serve ul li:nth-last-child(-n + 6) a:hover {
   color: #3eb4fa;
 }
 /* 15.底部 footer */
@@ -2079,38 +2114,46 @@
   font-size: 14px;
   margin-top: 13px;
   line-height: 33px;
-  text-align: center;
+  /* text-align: center; */
 }
-.headnav-top-center-head{
+.headnav-top .headnav-top-center-head {
   font-size: 16px;
+  width: 85px;
   color: #fff;
   margin-left: 60px;
 }
-.headnav-top-center span{
+.headnav-top-center span {
   display: inline-block;
   width: 81px;
   height: 33px;
   /* background-color: red; */
   font-size: 16px;
+  text-align: center;
+}
+.headnav-top-center-ws>span{
+  width: 92px;
 }
 .headnav-top-center-head span {
   display: inline-block;
-  width: 55px;
-  height: 33px;
+  width: 46px;
+  height: 32px;
   text-align: center;
   font-size: 18px;
   border-radius: 5px;
-  color: #FFF;
+  color: #fff;
   background-color: #2ba7ff;
 }
-.headnav-top-center span:hover{
+.headnav-top-center span:hover {
   background-color: #2ba7ff;
   border-radius: 5px;
   color: #fff;
-
+}
+.headnav-top-center-ws{
+  width: 92px;
 }
 .headnav-top-right {
   float: right;
+  margin-right: 50px;
 }
 .headnav-top-right-search {
   height: 32px;
