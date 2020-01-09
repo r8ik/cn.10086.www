@@ -208,7 +208,7 @@
   float: left;
   height: 25px;
   width: 25px;
-  background-image: url(../img/咪咕音乐/ia_100000016.jpg);
+  background-image: url(../img/ia_100000016.jpg);
   background-repeat: no-repeat;
   margin-top: 15px;
   margin-left: 15px;
@@ -294,7 +294,7 @@ main .container {
   display: inline-block;
   height: 20px;
   width: 20px;
-  background-image: url(../img/咪咕音乐/ia_100000037.jpg);
+  background-image: url(../img/ia_100000037.jpg);
   margin-right: 25px;
   margin-top: 12px;
 }
@@ -302,7 +302,7 @@ main .container {
   display: inline-block;
   height: 20px;
   width: 20px;
-  background-image: url(../img/咪咕音乐/ia_100000038.jpg)
+  background-image: url(../img/ia_100000038.jpg)
 }
 .main-right{
   float: right;

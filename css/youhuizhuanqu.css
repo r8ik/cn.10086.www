@@ -216,7 +216,7 @@
   display: inline-block;
   width: 112px;
   height: 39px;
-  background-image: url(../img/优惠专区/yhlb.gif);
+  background-image: url(../img/yhlb.gif);
   background-repeat: no-repeat;
   background-position: 1px 1px;
   margin-left: 18px;
@@ -311,14 +311,14 @@ margin-top: 18px;
   height: 12px;
   width: 12px;
   /* background-color: red; */
-  background-image: url(../img/优惠专区/under-fb.gif);
+  background-image: url(../img/under-fb.gif);
 }
 .under-sb{
   display: inline-block;
   height: 12px;
   width: 12px;
   /* background-color: red; */
-  background-image: url(../img/优惠专区/under-sb.gif);
+  background-image: url(../img/under-sb.gif);
   background-position: 0px 6px;
 }
 .under-page{

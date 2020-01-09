@@ -1,6 +1,6 @@
-html {
+/* html {
   margin-bottom: 500px;
-}
+} */
 .topnav {
   height: 30px;
   width: 100%;
@@ -30,6 +30,9 @@ html {
 .topnav-right a span {
   color: #e40077;
 }
+.topnav-eng{
+  margin-right: 8px;
+}
 /* 中国移动客户端背景 */
 .topnav-phone {
   position: relative;
@@ -53,6 +56,7 @@ html {
   box-sizing: border-box;
   background-color: #fff;
   border: 1px solid #dfddde;
+  z-index: 5;
 }
 .qr > img {
   height: 92px;
@@ -172,7 +176,7 @@ html {
   width: 234px;
   background-color: #3eb4fa;
   line-height: 48px;
-  font-size: 16px;
+  font-size: 17px;
   color: #ffffff;
   padding-left: 66px;
   box-sizing: border-box;
@@ -255,6 +259,7 @@ html {
   box-sizing: border-box;
   background-color: #fff;
   box-sizing: border-box;
+  z-index: 4;
 }
 .carousel-left-li-one:hover .carousel-left-li-one-business {
   display: block;
@@ -283,8 +288,10 @@ html {
   z-index: 6;
 }
 .carousel-left-li-one-business-option {
+  /* position: relative; */
   height: 37px;
 }
+
 .carousel-left-li-one-business-option > a {
   float: left;
   width: 64px;
@@ -828,11 +835,50 @@ html {
 }
 /* 中心 */
 .carousel-center {
+  position: relative;
   float: left;
   height: 400px;
   width: 705px;
   /* background-color: salmon; */
 }
+
+/* 轮播图按钮 */
+.carousel-center-zuo {
+  display: none;
+  position: absolute;
+  top: 160px;
+  left: 0px;
+}
+.carousel-center-you {
+  display: none;
+  position: absolute;
+  top: 160px;
+  right: 0;
+}
+
+.carousel-center:hover .carousel-center-zuo,
+.carousel-center:hover .carousel-center-you {
+  display: block;
+}
+/* 轮播图小圆点 */
+.carousel-center-dot {
+  position: absolute;
+  bottom: 12px;
+  left: 286px;
+  /* background-color: rebeccapurple; */
+}
+.carousel-center-dot li {
+  float: left;
+  height: 10px;
+  width: 10px;
+  background-color: #090e2d;
+  margin-right: 8px;
+  border-radius: 50%;
+}
+.carousel-center-dot a:nth-child(4) li {
+  background-color: #e40078;
+}
+
 .carousel-right {
   float: right;
   height: 398px;
@@ -840,6 +886,26 @@ html {
   background-color: #ffffff;
   border: 1px solid transparent;
   box-sizing: border-box;
+}
+/* 惠 */
+.carousel-right-top-gj{
+position: relative;
+}
+.hui {
+  position: absolute;
+  top: -13px;
+  left: 40px;
+  width: 21px;
+  height: 21px;
+  padding-top: 3px;
+  padding-left: 1px;
+  box-sizing: border-box;
+  background: rgb(228, 0, 119);
+  border-radius: 50%;
+  color: #fff;
+  font-family: 宋体;
+  font-weight: normal;
+  font-size: 14px;
 }
 .carousel-right-top {
   height: 148px;
@@ -860,7 +926,10 @@ html {
   display: block;
   margin-top: 11px;
 }
-
+.carousel-right-top img:hover {
+  transition: all 0.6s;
+  transform: scale(1.2);
+}
 .carousel-right-bottom {
   height: 217px;
   width: 234px;
@@ -879,7 +948,11 @@ html {
   font-size: 13px;
   margin-left: 29px;
 }
-.carousel-right-bottom-title span:first-child {
+.carousel-right-bottom-title a:first-child span {
+  color: #3eb4fa;
+  border-bottom: 1px solid #3eb4fa;
+}
+.carousel-right-bottom-title a:last-child span:hover {
   color: #3eb4fa;
   border-bottom: 1px solid #3eb4fa;
 }
@@ -891,7 +964,7 @@ html {
 }
 .carousel-right-bottom-content > div input {
   margin-left: 8px;
-  color: #f2e5dc;
+  /* color: red; */
   border: none;
   background-color: transparent;
   margin-top: 11px;
@@ -910,6 +983,11 @@ html {
   box-sizing: border-box;
   margin-top: 10px;
   border-radius: 10%;
+}
+.carousel-right-bottom-content a span:hover {
+  color: #ffffe9;
+  background-color: #e30077;
+  border: 1px solid #e30077;
 }
 .carousel-right-bottom-content a:nth-child(2) span:first-child {
   color: #ffffe9;
@@ -934,6 +1012,7 @@ html {
 
 /* 4. 优惠专区 down */
 .down {
+  position: relative;
   height: 190px;
   width: 100%;
   /* background-color: cadetblue; */
@@ -968,6 +1047,25 @@ html {
   margin-left: 114px;
   margin-top: 8px;
 }
+/* 优惠专区按钮 */
+.down-div-two {
+  background-image: url(../img/down-button-left.png);
+  background-repeat: no-repeat;
+  background-position: 5px 70px;
+}
+.down-div-four {
+  position: relative;
+}
+.down-button-right {
+  position: absolute;
+  top: 89px;
+  right: 354px;
+}
+.down-button-right > img {
+  width: 28px;
+  height: 35px;
+}
+
 /* 1-5F  title*/
 .discount,
 .business,
@@ -1026,6 +1124,15 @@ html {
   margin-right: 10px;
   margin-top: 36px;
 }
+.discount-title-right span:hover,
+.discount-title-right span:hover,
+.business-title-right span:hover,
+.phone-title-right span:hover,
+.capacity-title-right span:hover,
+.amusement-title-right span:hover,
+.like-title-right span:hover{
+ color: #3eb4fa;
+}
 .discount-title-right a:first-child span,
 .discount-title-right a:first-child span,
 .business-title-right a:first-child span,
@@ -1034,6 +1141,7 @@ html {
 .amusement-title-right a:first-child span {
   color: #e30077;
 }
+
 /* 5. 1F  优惠 discount */
 .discount {
   /* background-color: coral; */
@@ -1255,7 +1363,7 @@ html {
   margin-top: 14px;
 }
 .phone-content div > div {
-  border: 1px solid transparent;
+  overflow: hidden;
 }
 .phone-content div:nth-last-child(-n + 3) > div {
   /* background-color: teal; */
@@ -1360,7 +1468,7 @@ html {
   border: 1px solid #e8e8e8;
 }
 .capacity-content > div:nth-last-child(-n + 3) > div {
-  border: 1px solid transparent;
+  overflow: hidden;
 }
 .capacity-content-one {
   float: left;
@@ -1379,6 +1487,7 @@ html {
   color: #222222;
   margin-top: 16px;
   margin-left: 40px;
+  font-size: 14px;
 }
 .capacity-content-two,
 .capacity-content-three,
@@ -1415,6 +1524,7 @@ html {
 .capacity-content-one-three-right,
 .capacity-content-one-four-right {
   float: right;
+  margin-right: 1px;
 }
 
 .capacity-content-one,
@@ -1507,7 +1617,8 @@ html {
   height: 116px;
   width: 237px;
   /* background-color: teal; */
-  border: 1px solid transparent;
+  /* border: 1px solid transparent; */
+  overflow: hidden;
   border-bottom: 1px solid #e8e8e8;
   box-sizing: border-box;
 }
@@ -1525,6 +1636,10 @@ html {
   color: #808080;
   margin-top: 19px;
   margin-left: 24px;
+}
+.amusement-content-one-one {
+  border-left: 5px solid #ef2e72;
+  box-sizing: border-box;
 }
 .amusement-content-two {
   float: left;
@@ -1887,7 +2002,7 @@ html {
   font-weight: 700;
   margin-top: 27px;
 }
-.serve ul li:nth-last-child(-n+6) a:hover {
+.serve ul li:nth-last-child(-n + 6) a:hover {
   color: #3eb4fa;
 }
 /* 15.底部 footer */
@@ -1914,6 +2029,64 @@ html {
   margin-top: 12px;
   line-height: 24px;
 }
+
+/* 16.页面右侧扫黄打非 */
+.fei {
+  position: fixed;
+  top: 290px;
+  right: 0px;
+}
+/* 页面右侧在线客服*/
+.kf {
+  position: fixed;
+  top: 420px;
+  right: 0px;
+  width: 100px;
+  height: auto;
+  /* background-color: red; */
+}
+.kf-li {
+  height: 38px;
+  width: 100%;
+  /* background-color: rosybrown; */
+  margin-bottom: 1px;
+}
+.kf-li:hover {
+  background-color: #3eb4fa;
+}
+
+.kf-li-img {
+  float: right;
+  height: 38px;
+  width: 40px;
+  background-color: #918888;
+}
+.kf-li:hover > a {
+  background-color: #3eb4fa;
+}
+.kf-li-img > img {
+  /* float:right; */
+  margin-top: 6px;
+  margin-left: 7px;
+}
+.kf-li .kf-li-sp {
+  display: none;
+}
+.kf-li:hover .kf-li-sp {
+  display: inline-block;
+}
+.kf-li-sp {
+  display: inline-block;
+  width: 60px;
+  height: 38px;
+  /* font-size: 12px; */
+  /* background-color: red; */
+}
+.kf-li-sp > s {
+  line-height: 38px;
+  margin-left: 5px;
+  color: #fff;
+}
 /* 头部导航定位 */
 .headnav {
   position: fixed;
@@ -1933,9 +2106,54 @@ html {
 .headnav-top-left img {
   margin-top: 9px;
 }
-
+.headnav-top-center a {
+  float: left;
+  width: 115px;
+  height: 33px;
+  /* background-color: rosybrown; */
+  font-size: 14px;
+  margin-top: 13px;
+  line-height: 33px;
+  /* text-align: center; */
+}
+.headnav-top .headnav-top-center-head {
+  font-size: 16px;
+  width: 85px;
+  color: #fff;
+  margin-left: 60px;
+}
+.headnav-top-center span {
+  display: inline-block;
+  width: 81px;
+  height: 33px;
+  /* background-color: red; */
+  font-size: 16px;
+  text-align: center;
+}
+.headnav-top-center-ws>span{
+  width: 92px;
+}
+.headnav-top-center-head span {
+  display: inline-block;
+  width: 46px;
+  height: 32px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #2ba7ff;
+}
+.headnav-top-center span:hover {
+  background-color: #2ba7ff;
+  border-radius: 5px;
+  color: #fff;
+}
+.headnav-top-center-ws{
+  width: 92px;
+}
 .headnav-top-right {
   float: right;
+  margin-right: 50px;
 }
 .headnav-top-right-search {
   height: 32px;
